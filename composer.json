@@ -1,0 +1,55 @@
+{
+    "name": "codicastudio/microscope",
+    "description": "A noobs worthless garbage, just learning.",
+    "keywords": [
+        "worthless garabage by a noob."
+    ],
+    "homepage": "https://github.com/codicastudio/microscope",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael J Brown",
+            "email": "mbrown@codicastudio.com",
+            "homepage": "https://codicastudio.com",
+            "role": "Developer"
+        }
+    ],
+
+    "require": {
+        "php" : "^7.4",
+        "laravel/framework": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Imanghafoori\\LaravelMicroscope\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Imanghafoori\\LaravelMicroscope\\": "src",
+            "Imanghafoori\\LaravelMicroscope\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Imanghafoori\\LaravelMicroscope\\LaravelMicroscopeServiceProvider"
+            ]
+        }
+    }
+}
