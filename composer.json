@@ -1,5 +1,5 @@
 {
-    "name": "codica-studio/microscope",
+    "name": "codicastudio/microscope",
     "description": "A random Codica Studio package.",
 
     "homepage": "https://github.com/codicastudio/microscope",
@@ -49,5 +49,7 @@
                 "Imanghafoori\\LaravelMicroscope\\LaravelMicroscopeServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
